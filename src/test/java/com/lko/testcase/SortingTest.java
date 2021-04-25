@@ -23,12 +23,12 @@ public class SortingTest {
     @DisplayName("Simple sorting logic, assuming first element is the smallest one!")   
     public void testSortingLogic() {
 		int arr[] = { 17, 21, 32, 79, 95, 36, 21 };
-		int[] arrTemp = arr;
+		int[] arrTemp = { 17, 21, 32, 79, 95, 36, 21 };
 		
 		Arrays.sort(arrTemp);
 		sortingLogic.sortArray(arr);
 		
-        assertEquals(arrTemp, arr);
+        assertEquals(Arrays.toString(arrTemp), Arrays.toString(arr));
     }
 	
 }
