@@ -26,6 +26,7 @@ public class SortingTest {
 		int[] arrTemp = { 17, 21, 32, 79, 95, 36, 21 };
 		
 		Arrays.sort(arrTemp);
+		
 		sortingLogic.sortArray(arr);
 		
         assertEquals(Arrays.toString(arrTemp), Arrays.toString(arr));
